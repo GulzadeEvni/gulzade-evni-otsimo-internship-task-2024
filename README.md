@@ -28,7 +28,7 @@ GET Endpoints
     ```shell
     GET /listMeals?is_vegetarian=true
     ```
-- /getMeal: Retrieves information about a specific meal.
+- /getMeal: Retrieves information about a specific meal. 
   - Query Parameters:
     - id (integer): The ID of the meal.
   - Example:
@@ -76,7 +76,7 @@ POST Endpoints
   - Returns:
     - A list of meals that match the specified dietary preferences.
 
-- ### get_meal: Retrieves information about a specific meal.
+- ### get_meal: Retrieves information about a specific meal. Makes a simpler and more direct search. It just looks for meal_id in self.data[0]["meals"].
   - Parameters:
     - meal_id (int): The ID of the meal.
   - Returns:
@@ -100,14 +100,14 @@ POST Endpoints
   - Returns:
     - True if the meal is vegan, otherwise False.
 
-- ### calculate_quality_for_random: Calculates the overall quality of a specific meal based on ingredient qualities.
+- ### calculate_quality_for_random: Calculates the overall quality of a specific meal based on ingredient qualities. More detailed information is returned, including both the quality score and the quality information of the materials. This function is designed for situations where more information is needed.
   - Parameters:
     - meal_id (int): The ID of the meal.
     - ingredient_qualities (dict, optional): A dictionary of ingredient qualities.
   - Returns:
     - A tuple containing the overall quality score and a list of ingredients with their respective qualities.
 
-- ### calculate_price_for_random: Calculates the total price of a specific meal based on ingredient qualities.
+- ### calculate_price_for_random: Calculates the total price of a specific meal based on ingredient qualities. It calculates the total price of the meal and the quality information of the ingredients and returns this information. This function is designed for situations where more information is needed.
   - Parameters:
     - meal_id (int): The ID of the meal.
     - ingredient_qualities (dict, optional): A dictionary of ingredient qualities.
@@ -126,7 +126,7 @@ POST Endpoints
   - Returns:
     - The affordable meal details if found, otherwise None.
 
-- ### _get_meal_by_id: Retrieves a meal by its ID.
+- ### _get_meal_by_id: Retrieves a meal by its ID. It does a broader search and looks for meal_id among all meal_groups and meals in self.data.
   - Parameters:
     - meal_id (int): The ID of the meal.
   - Returns:
@@ -145,14 +145,14 @@ POST Endpoints
   - Returns:
     - The price per unit for the specified ingredient and quality, or None if not found.
 
-- ### calculate_quality: Calculates the overall quality of a specific meal based on ingredient qualities.
+- ### calculate_quality: Calculates the overall quality of a specific meal based on ingredient qualities. It is used to calculate the quality of the food and returns only the quality score.
   - Parameters:
     - meal_id (int): The ID of the meal.
     - ingredient_qualities (dict, optional): A dictionary of ingredient qualities.
   - Returns:
     - The overall quality score of the meal.
 
-- ### calculate_price: Calculates the total price of a specific meal based on ingredient qualities.
+- ### calculate_price: Calculates the total price of a specific meal based on ingredient qualities. It is used to calculate the total price of the meal and returns only the price.
   - Parameters:
     - meal_id (int): The ID of the meal.
     - ingredient_qualities (dict, optional): A dictionary of ingredient qualities.
