@@ -156,14 +156,6 @@ class Restaurant:
                 if meal['id'] == meal_id:
                     return meal
         return None
-    
-
-    def get_meal(self, meal_id):
-            meals = self.data[0].get("meals", [])
-            for meal in meals:
-                if meal["id"] == meal_id:
-                    return meal
-            return None
 
     def _get_quality_score(self, quality):
         if quality == 'high':
