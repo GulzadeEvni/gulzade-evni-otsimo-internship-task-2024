@@ -245,3 +245,5 @@ POST Endpoints
     - port (int): The port number to run the server on (default is 8080).
   - Behavior:
     - Initializes and starts the HTTP server, printing a message to indicate that the server has started.
+
+## Example Usage
