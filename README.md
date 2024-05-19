@@ -247,3 +247,24 @@ POST Endpoints
     - Initializes and starts the HTTP server, printing a message to indicate that the server has started.
 
 ## Example Usage
+
+### For price endpoint
+
+![fiyat](https://github.com/GulzadeEvni/gulzade-evni-otsimo-internship-task-2024/assets/111283320/54a867ef-8c9c-44a4-a231-a101b73a2bab)
+
+### For quality endpoint
+
+![kalite](https://github.com/GulzadeEvni/gulzade-evni-otsimo-internship-task-2024/assets/111283320/151e5357-091c-47a2-8378-445b378e7ad5)
+
+### For random endpoint
+
+![random](https://github.com/GulzadeEvni/gulzade-evni-otsimo-internship-task-2024/assets/111283320/92106732-880a-43b7-a10e-23bd4cff0aad)
+
+### Incorrect use of listMeals
+
+![list_hatalı](https://github.com/GulzadeEvni/gulzade-evni-otsimo-internship-task-2024/assets/111283320/6451f106-4eaf-4e53-aa6a-2b470bb16064)
+
+### Incorrect use of getMeal
+
+![get_hatalı](https://github.com/GulzadeEvni/gulzade-evni-otsimo-internship-task-2024/assets/111283320/2e2e3a3b-bd99-43a2-a37a-bc4f4ddf522e)
+
